@@ -1,0 +1,8 @@
+pandas>=2.2.3
+ml-dtypes==0.4.0
+tensorflow-hub
+tensorflow-cpu
+jax[cpu_pip]
+keras-nlp
+keras>=3
+jupyterlab>=4
