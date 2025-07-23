@@ -13,7 +13,6 @@ RUN apt update && \
         python3 \
         openjdk-21-jre && \
     curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.9.6 sh && \
-    pip install --force-reinstall --upgrade pip --ignore-installed && \
-    curl -sSL https://install.python-poetry.org | python3 -
+    pip install --force-reinstall --upgrade pip --ignore-installed 
 ENV OLLAMA_MODELS=/storage
     
