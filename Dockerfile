@@ -1,4 +1,4 @@
-FROM public.ecr.aws/ubuntu/ubuntu:22.04
+FROM public.ecr.aws/ubuntu/ubuntu:24.04
 
 RUN apt update && \
     apt install -y \
@@ -12,7 +12,7 @@ RUN apt update && \
         python3-venv \
         python3 \
         openjdk-21-jre && \
-    curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.9.6 sh && \
+    curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.10.0 sh && \
     pip install --force-reinstall --upgrade pip --ignore-installed && \
     curl -sSL https://install.python-poetry.org | python3 -
 ENV OLLAMA_MODELS=/storage
