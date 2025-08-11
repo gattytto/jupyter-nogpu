@@ -10,6 +10,7 @@ RUN apt update && \
         cmake \
         python3-pip \
         python3-venv \
+        python3-pyaudio \
         python3 \
         openjdk-21-jre && \
     curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.11.3 sh && \
