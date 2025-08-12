@@ -12,6 +12,6 @@ RUN apt update && \
         python3-venv \
         python3 \
         openjdk-21-jre && \
-    curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.9.6 sh
+    curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.11.4 sh
 ENV OLLAMA_MODELS=/storage
     
