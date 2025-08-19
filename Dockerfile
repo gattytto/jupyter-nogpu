@@ -13,6 +13,7 @@ RUN apt update && \
         python3-pyaudio \
         portaudio19-dev \
         python3 \
+        libc6-dev \
         openjdk-21-jre && \
     curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.11.4 sh && \
     pip install --force-reinstall --upgrade pip --ignore-installed && \
