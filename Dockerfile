@@ -16,6 +16,7 @@ RUN apt update && \
         libc6-dev \
         openjdk-21-jre && \
     curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.11.5 sh && \
-    pip install --force-reinstall --upgrade pip --ignore-installed --break-system-packages
+    pip install --force-reinstall --upgrade pip --ignore-installed --break-system-packages && \
+    curl -sSL https://install.python-poetry.org | python3 -
 ENV OLLAMA_MODELS=/storage
     
