@@ -1,17 +1,8 @@
-FROM public.ecr.aws/ubuntu/ubuntu:24.04
+FROM quay.io/gattytto/jupyter-nogpu:latest
 
 RUN apt update && \
     apt install -y \
-        golang \
-        unzip \
-        wget \
-        curl \
-        git \
-        cmake \
-        python3-pip \
-        python3-venv \
-        python3 \
-        openjdk-21-jre && \
-    curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.11.4 sh
+        python3-pyaudio \
+        portaudio19-dev \
+        libc6-dev 
 ENV OLLAMA_MODELS=/storage
-    
