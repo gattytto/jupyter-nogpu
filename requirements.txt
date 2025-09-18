@@ -5,4 +5,5 @@ tensorflow-cpu
 jax[cpu_pip]
 keras-nlp
 keras>=3
+itsdangerous
 jupyterlab>=4
